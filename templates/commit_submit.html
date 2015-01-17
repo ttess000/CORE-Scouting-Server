@@ -206,33 +206,23 @@
         </fieldset>
         <fieldset id="auto">
             <legend>Auto</legend>
-            {{ render_field(form.auto_high, tabindex=1) }}
-            {{ render_field(form.auto_low, tabindex=1) }}
-            {{ render_field(form.auto_hot, tabindex=1) }}
-            {{ render_field(form.auto_mobility, tabindex=1) }}
-            {{ render_field(form.auto_goalie, tabindex=1) }}
+            {{ render_field(form.tote_bonus, tabindex=1) }}
+            {{ render_field(form.bin_bonus, tabindex=1) }}
+            {{ render_field(form.move_bonus, tabindex=1) }}
         </fieldset>
         <fieldset id="teleop">
             <legend>Teleop</legend>
-            {{ render_field(form.team_cycles, tabindex=1) }}
-            {{ render_field(form.alliance_cycles, tabindex=1) }}
-            {{ render_split(form.truss_made, form.truss_total, tabindex=1) }}
-            {{ render_split(form.catch_made, form.catch_total, tabindex=1) }}
-            {{ render_split(form.high_made, form.high_total, tabindex=1) }}
-            {{ render_split(form.low_made, form.low_total, tabindex=1) }}
-            {{ render_split(form.pickup_made, form.pickup_total, tabindex=1) }}
-            {{ render_split(form.pass_made, form.pass_total, tabindex=1) }}
-            {{ render_split(form.inbound_made, form.inbound_total, tabindex=1) }}
-            {{ render_field(form.defense, tabindex=1) }}
-            {{ render_split(form.hp_front, form.hp_back, False, "Back: ", tabindex=1) }}
+            {{ render_split(form.grey_totes_scored, form.highest_grey_tote, tabindex=1) }}
+            {{ render_split(form.bins_scored, form.highest_bin, tabindex=1) }}
+            {{ render_split(form.litter_landfill, tabindex=1) }}
+            {{ render_split(form.litter_thrown, tabindex=1) }}
+            {{ render_split(form.yellow_totes_scored, tabindex=1) }}
         </fieldset>
         <fieldset id="robot">
             <legend>Robot</legend>
-            {{ render_field(form.shooter, tabindex=1) }}
-            {{ render_field(form.catcher, tabindex=1) }}
-            {{ render_field(form.pickup, tabindex=1) }}
-            {{ render_field(form.blocker, tabindex=1) }}
-            {{ render_field(form.goalie, tabindex=1) }}
+            {{ render_field(form.tote_pickup, tabindex=1) }}
+            {{ render_field(form.bin_pickup, tabindex=1) }}
+            {{ render_field(form.litter_pickup, tabindex=1) }}
             {{ render_field(form.drive_type, tabindex=1) }}
         </fieldset>
         <div style="clear:both"></div>
